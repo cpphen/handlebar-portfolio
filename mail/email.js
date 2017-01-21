@@ -7,7 +7,7 @@ var helper = require('sendgrid').mail
 var email = {
 
 	send: function(name, emSubject, email, message, myEmail, callback){
-
+			var SENDGRID_API_KEY = EJh_hy5yRpeFcXD49losVg
 			console.log("name", name + " " + emSubject + " " + email + " " + message + " " + myEmail)
 
 			from_email = new helper.Email(email);

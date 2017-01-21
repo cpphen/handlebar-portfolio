@@ -20,7 +20,7 @@ var homeData = {
 	formSubject: "Subject:",
 	formEmail: "Email:",
 	formMessage: "Message:",
-	connectWith: "ConnectWithMe",
+	connectWith: "Connect With Me",
 	contactInfo: "Contact Info",
 	education: "Education",
 	experience: "Experience",
@@ -50,9 +50,7 @@ router.post('/email', function(req, res){
 	var myEmail = 'btnysci@yahoo.com';
 
 	mail.send(name, emSubject, email, message, myEmail, function(){
-		res.redirect('/contact');
-		
-	})
-
+		res.redirect('/contact');	
+	});
 });
 module.exports = router;

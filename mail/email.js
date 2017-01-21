@@ -8,6 +8,8 @@ var email = {
 
 	send: function(name, emSubject, email, message, myEmail, callback){
 
+			console.log("name", name + " " + emSubject + " " + email + " " + message + " " + myEmail)
+
 			from_email = new helper.Email(email);
 			to_email = new helper.Email(myEmail);
 			subject = emSubject;

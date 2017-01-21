@@ -5,8 +5,6 @@ var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 // using SendGrid's v3 Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
 
-
-
 var email = {
 
 	send: function(emSubject, email, message, callback){
@@ -40,22 +38,23 @@ var email = {
 	}
 }
 
+module.exports = email;
   
-// var sendgrid = require("sendgrid")(process.env.SENDGRID_API_KEY);
-// var email = new sendgrid.Email();
-// var eeemail = {
+// from_email = new helper.Email("test@example.com")
+// to_email = new helper.Email("test@example.com")
+// subject = "Sending with SendGrid is Fun"
+// content = new helper.Content("text/plain", "and easy to do anywhere, even with Node.js")
+// mail = new helper.Mail(from_email, subject, to_email, content)
 
-// 	send: function(emSubject, eemail, message, callback){
+// var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+// var request = sg.emptyRequest({
+//   method: 'POST',
+//   path: '/v3/mail/send',
+//   body: mail.toJSON()
+// });
 
-
-// 		email.addTo("btnysci@yahoo.com");
-// 		email.setFrom(eemail);
-// 		email.setSubject(emSubject);
-// 		email.setHtml(message);
-
-// 		sendgrid.send(email);
-		
-// 		callback();
-// 	}
-// }
-// module.exports = eeemail;
+// sg.API(request, function(error, response) {
+//   console.log(response.statusCode)
+//   console.log(response.body)
+//   console.log(response.headers)
+// });

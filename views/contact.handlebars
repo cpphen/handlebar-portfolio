@@ -1,0 +1,64 @@
+<div class = "headerWrapper">
+	<h1 class = "HeadOne" id = "header">{{ headerName }}</h1>
+		<ul class = "contactList">
+			<li>
+				<a id = "list1" href = "/portfolio">{{ PortfolioLi }}</a>
+			</li>
+			<li>
+				<a class = "contact" id = "list2" href = "/contact">{{ ContactLi }}</a>
+			</li>
+			<li>
+				<a id = "list3" class = "blue" href = "/">{{ AboutLi }}</a>
+			</li>
+		</ul>
+</div>
+<section class = "UltimateContainer">
+	<section class = "main" id = "sectionMain">
+		<div class = "mainDiv" id = "sectionAbout">
+			<h1 class="mainDivH1" id = "AboutMe">{{ ContactLi }}</h1>
+				<form action="/email" method="POST">
+					<label for="fullName">{{ formName }}</label> <br><br>
+					<input type="text" name="fullName">
+					<br>
+					<br>
+					<label for="subject">{{ formSubject }}</label> <br><br>
+					<input type="text" name="subject">
+					<br>
+					<br>
+					<label for="email">{{ formEmail }}</label> <br><br>
+					<input type="text" name="email">
+					<br>
+					<br>
+					<label for="message">{{ formMessage }}</label> <br><br>
+					<textarea rows="15" cols="80" type="text" name="message">
+					</textarea>
+					<br>
+					<br>
+					<button type="submit">Submit</button>
+				</form>
+		</div>
+		<div class = "DivConnect" id = "sectionConnect">
+			<h2 class = "ConnectHeader"> {{ connectWith }} </h2>
+				<ol class = "ConnectList">
+					<li class = "connectLI" id="connectLI1">
+						<a href = "http://stackoverflow.com/users/7133511/h-lee" target="_blank">
+							<img id = "stackoverflow" src = "/assets/img/5333_-_Stackoverflow-128.png" alt = "face" />
+						</a>
+					</li>
+					<li class = "connectLI" id="connectLI2">
+						<a href = "https://github.com/henhen87" target="_blank">
+							<img id = "github" src = "/assets/img/github-128.png" alt = "twitt" />
+						</a>
+					</li>
+					<li class = "connectLI" id="connectLI3">
+						<a href = "https://www.linkedin.com/in/henry-lee-77170b78?trk=nav_responsive_tab_profile" target="_blank">
+							<img id = "linked" src = "/assets/img/1474864458_linkedin_circle_black.png" alt = "linkedin" />
+						</a>
+					</li>
+				</ol>
+		</div>
+	</section>
+</section>
+<footer class = foot>
+&copy; Copyright 2016 Henry Lee
+</footer>

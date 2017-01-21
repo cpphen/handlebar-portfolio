@@ -44,12 +44,12 @@ router.get('/portfolio', function(req, res){
 router.post('/email', function(req, res){
 	var name = req.body.fullName;
 	var emSubject = req.body.subject;
-	var email = req.body.email;
+	var eemail = req.body.email;
 	var message = name + " " + req.body.message;
 
 	// var myEmail = 'btnysci@yahoo.com';
 
-	mail.send(name, emSubject, email, message, function(){
+	mail.send(name, emSubject, eemail, message, function(){
 		res.redirect('/contact');	
 	});
 });

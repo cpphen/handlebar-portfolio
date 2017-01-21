@@ -25,9 +25,10 @@ var email = {
 			  console.log(response.statusCode)
 			  console.log(response.body)
 			  console.log(response.headers)
+			  // callback(response);
 			});
 
-			callback(res);
+			callback();
 
 	}
 }

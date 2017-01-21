@@ -2,11 +2,12 @@
 
 // using SendGrid's v3 Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
-var helper = require('sendgrid').mail
 
 var email = {
 
 	send: function(name, emSubject, email, message, myEmail, callback){
+			
+			var helper = require('sendgrid').mail
 
 
 			from_email = new helper.Email(email);

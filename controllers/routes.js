@@ -45,7 +45,7 @@ router.post('/email', function(req, res){
 	var name = req.body.fullName;
 	var emSubject = req.body.subject;
 	var email = req.body.email;
-	var message = name + " " + req.body.message;
+	var message = req.body.message;
 
 	// var myEmail = 'btnysci@yahoo.com';
 

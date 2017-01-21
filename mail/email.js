@@ -24,6 +24,10 @@ var email = {
 			});
 
 			sg.API(request, function(error, response) {
+			  if(error){
+			  	throw error;
+			  	console.log(error);
+			  }   	
 			  console.log(response.statusCode)
 			  console.log(response.body)
 			  console.log(response.headers)

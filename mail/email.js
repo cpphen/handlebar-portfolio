@@ -10,11 +10,11 @@ var email = {
 			var helper = require('sendgrid').mail
 
 
-			from_email = new helper.Email(email);
-			to_email = new helper.Email(myEmail);
-			subject = emSubject;
-			content = new helper.Content("text/plain", message);
-			mail = new helper.Mail(from_email, subject, to_email, content);
+			var from_email = new helper.Email(email);
+			var to_email = new helper.Email(myEmail);
+			var subject = emSubject;
+			var content = new helper.Content("text/plain", message);
+			var mail = new helper.Mail(from_email, subject, to_email, content);
 
 			var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 			var request = sg.emptyRequest({

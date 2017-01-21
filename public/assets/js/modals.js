@@ -3,6 +3,15 @@ $(document).on('click', '#education', education);
 // $(document).on('click', '#experience', experience);
 $(document).on('click', '.close', close);
 
+$("#textbox").keyup(function(event){
+    if(event.keyCode == 13){
+        // $("#id_of_button").click();
+        $.post('/email').done(function(data){
+
+        });
+    }
+});
+
 var modal = $('#myModal');
 
 function contact(){

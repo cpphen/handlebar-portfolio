@@ -47,9 +47,9 @@ router.post('/email', function(req, res){
 	var email = req.body.email;
 	var message = name + " " + req.body.message;
 
-	var myEmail = 'btnysci@yahoo.com';
+	// var myEmail = 'btnysci@yahoo.com';
 
-	mail.send(name, emSubject, email, message, myEmail, function(){
+	mail.send(name, emSubject, email, message, function(){
 		res.redirect('/contact');	
 	});
 });

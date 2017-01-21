@@ -5,10 +5,10 @@ $(document).on('click', '.close', close);
 
 $("#textbox").keyup(function(event){
     if(event.keyCode == 13){
-        // $("#id_of_button").click();
-        $.post('/email').done(function(data){
+        $("#but").click();
+        // $.post('/email').done(function(data){
 
-        });
+        // });
     }
 });
 

@@ -20,7 +20,7 @@ var homeData = {
 	formSubject: "Subject:",
 	formEmail: "Email:",
 	formMessage: "Message:",
-	connectWith: "Connect With Me",
+	connectWith: "Connect with Me",
 	contactInfo: "Contact Info",
 	education: "Education",
 	experience: "Experience",

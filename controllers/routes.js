@@ -2,7 +2,7 @@ var express = require('express');
 
 var router = express.Router();
 
-var mail = require('../mail/email');
+var email = require('../mail/email');
 // var helper = require('sendgrid').mail;
 // var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
@@ -44,12 +44,12 @@ router.get('/portfolio', function(req, res){
 router.post('/email', function(req, res){
 	var name = req.body.fullName;
 	var emSubject = req.body.subject;
-	var email = req.body.email;
+	var senderMail = req.body.email;
 	var message = name + " " + req.body.message;
 
 	// var myEmail = 'btnysci@yahoo.com';
 
-	mail.send(emSubject, email, message, function(){
+	email.send(emSubject, senderMail, message, function(){
 		res.redirect('/contact');	
 	});
 });

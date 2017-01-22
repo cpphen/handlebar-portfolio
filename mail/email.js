@@ -28,7 +28,7 @@ var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
 var email = {
 
-	send: function(emSubject, email, message, callback){
+	send: function(emSubject, senderMail, message, callback){
 			
 			var from_email = new helper.Email(email);
 			var to_email = new helper.Email('btnysci@yahoo.com');

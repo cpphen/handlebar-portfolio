@@ -45,11 +45,11 @@ router.post('/email', function(req, res){
 	var name = req.body.fullName;
 	var emSubject = req.body.subject;
 	var senderMail = req.body.email;
-	var message = name + " " + req.body.message;
+	var message = req.body.message;
 
 	// var myEmail = 'btnysci@yahoo.com';
 
-	email.send(emSubject, senderMail, message, function(){
+	email.send(name, emSubject, senderMail, message, function(){
 		res.redirect('/contact');	
 	});
 });

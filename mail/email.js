@@ -68,7 +68,7 @@ var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
 var email = {
 
-	send: function(emSubject, senderMail, message, callback){
+	send: function(Sname, emSubject, senderMail, message, callback){
 
 		var request = sg.emptyRequest({
 		  method: 'POST',
@@ -86,6 +86,7 @@ var email = {
 		    ],
 		    from: {
 		      email: senderMail,
+		      name: Sname
 		    },
 		    content: [
 		      {
@@ -93,6 +94,10 @@ var email = {
 		        value: message,
 		      },
 		    ],
+		    reply_to: {
+		    	email: senderMail,
+		    	name: Sname
+		    }
 		  },
 		});
 

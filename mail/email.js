@@ -85,7 +85,7 @@ var email = {
 		      },
 		    ],
 		    from: {
-		      email: senderMail,
+		      email: "mailer_portfolio@nameless-bastion56132.herokuapp.com",
 		      name: Sname
 		    },
 		    content: [

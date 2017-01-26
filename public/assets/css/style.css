@@ -50,7 +50,7 @@
 			margin-left: 135px;
 			overflow: auto;
 		}
-		h1.HeadOne
+		.HeadOne
 		{
 			color: white;
 			font-size: 30px;
@@ -67,7 +67,7 @@
 			float: left;
 		}
 		
-		section.UltimateContainer
+		.UltimateContainer
 		{
 			background-image: url(/assets/img/vichy.png); 
 			border-top: solid;
@@ -76,7 +76,7 @@
 			clear: both;
 			overflow: auto;
 		}
-		section.main
+		.main
 		{
 			width: 960px;
 			margin-left: 135px;	
@@ -125,7 +125,7 @@
 		{
  			color: green;
 		}
-		a.contact
+		.contact
 		{
 			border-left: solid;
 			border-right: solid;
@@ -175,7 +175,7 @@
   			-o-transform: rotate(-160deg);
   			transform: rotate(-160deg);
 		 }
-		div.mainDiv
+		.mainDiv
 		{
 			background-color: white;
 			border: solid;
@@ -190,7 +190,7 @@
 			overflow: auto;
 		}
 		
-		h1.mainDivH1
+		.mainDivH1
 		{
 			font-size: 30px;
 			font-weight: bold;
@@ -215,11 +215,11 @@
 			line-height: 150%; 
 			font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 		}
-		p.p2
+		.p2
 		{
 			padding-top: 0px;
 		}
-		div.DivConnect	
+		.DivConnect	
 		{
 			float: right;
 			border: solid;
@@ -235,7 +235,7 @@
 			margin-top: 50px;
 			overflow: auto;	
 		}
-		h2.ConnectHeader
+		.ConnectHeader
 		{
 			text-align: left;
 			color: #4aaaa5;
@@ -245,7 +245,7 @@
 			margin-left: 30px;
 			font-size: 20px;
 		}
-		ol.ConnectList
+		.ConnectList
 		{
 			border-top: solid; 
 			border-width: thin;
@@ -256,12 +256,12 @@
 			margin-left: 19px;
 			margin-right: 5px;
 		}
-		li.connectLI
+		.connectLI
 		{
 			float: left; 
 		}
 
-		li#connectLI1
+		#connectLI1
 		{
 			position: relative;
 			-webkit-animation-name: connect; /* Chrome, Safari, Opera */
@@ -285,7 +285,7 @@
 		    75%  {left:150px;}
 		    100% {left:0px; top:0px;}
 		}
-		li#connectLI2
+		#connectLI2
 		{
 			position: relative;
 			-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
@@ -305,7 +305,7 @@
 		    25%  {left:-50px;}
 		    100% {left:0px; top:0px;}
 		}
-		li#connectLI3
+		#connectLI3
 		{
 			position: relative;
 			-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
@@ -392,7 +392,7 @@
 		button
 		{
 			background-color: #4aaaa5;
-			width: 582px;
+			width: 584px;
 			margin-left: 0px;
 			font-family: 'Georgia', Times, Times New Roman, serif;
 			font-weight: lighter;
@@ -419,7 +419,7 @@
 			margin-top: 1px;
 			margin-bottom: 30px;
 		}
-		h1.PortfolioH1
+		.PortfolioH1
 		{
 			font-size: 30px;
 			font-weight: bold;
@@ -435,7 +435,7 @@
 			border-width: medium;
 			border-color: #cccccc;
 		}
-		div.PortIm1 
+		.PortIm1 
 		{
 			position: relative;
 			width: 275px;
@@ -444,6 +444,9 @@
 			border: solid;
 			border-color: black;
 		}
+		.PortIm1:hover{
+			border-color: #ff6666;
+		}
 		#Pic1
 		{
 			width: 269px;
@@ -451,17 +454,15 @@
 			margin-right: -50px;
 		
 		}
-		#Pic1:hover 
+	/*	#Pic1:hover 
 		{
-			/*  outline: 5px solid green;
-			  outline-offset: 10px;*/
 			-ms-transform: rotate(-225deg);
 			-webkit-transform: rotate(-225deg);
 			-moz-transform: rotate(-225deg);
 			-o-transform: rotate(-225deg);
 			transform: rotate(-225deg);
-		}
-		div.mainDivPortfolio
+		}*/
+		.mainDivPortfolio
 		{
 			background-color: white;
 			border: solid;
@@ -492,7 +493,7 @@
 			padding-bottom: 10px;
 			margin-bottom: 10px;
 		}
-		div.PortIm2
+		.PortIm2
 		{
 			position: relative;
 			width: 275px;
@@ -503,21 +504,24 @@
 			border-color: black;
 
 		}
+		.PortIm2:hover{
+			border-color: #9966ff;
+		}
 		#Pic2
 		{
 			width: 269px;
 			height: 170px;
 		}
-		#Pic2:hover  
+	/*	#Pic2:hover  
 		{
 			-ms-transform: rotate(45deg);
 			-webkit-transform: rotate(45deg);
 			-moz-transform: rotate(45deg);
 			-o-transform: rotate(45deg);
 			transform: rotate(45deg);
-		}
+		}*/
 
-		div.PortIm3
+		.PortIm3
 		{
 			position: relative;
 			width: 275px;
@@ -526,17 +530,20 @@
 			border: solid;
 			border-color: black;
 		}
+		.PortIm3:hover{
+			border-color: #ff6699;
+		}
 		#Pic3
 		{
 			width: 269px;
 			height: 170px;
 		}
-		#Pic3:hover 
+/*		#Pic3:hover 
 		{
 			  outline: thick solid orange;
 			  outline-offset: 10px;
-		}
-		div.PortIm4
+		}*/
+		.PortIm4
 		{
 			position: relative;
 			width: 275px;
@@ -545,20 +552,23 @@
 			border: solid;
 			border-color: black;
 		}
+		.PortIm4:hover{
+			border-color: #33ff00;
+		}
 		#Pic4
 		{
 			width: 269px;
 			height: 170px;
 		}
-		#Pic4:hover  
+		/*#Pic4:hover  
 		{
 			-ms-transform: rotate(-45deg);
 			-webkit-transform: rotate(-45deg);
 			-moz-transform: rotate(-45deg);
 			-o-transform: rotate(-45deg);
 			transform: rotate(-45deg);
-		}
-		div.PortIm5
+		}*/
+		.PortIm5
 		{
 			position: relative;
 			width: 275px;	
@@ -567,15 +577,35 @@
 			border: solid;
 			border-color: black;
 		}
+		.PortIm5:hover{
+			border-color: #cc99cc;
+		}
 		#Pic5
 		{
 			width: 269px;
 			height: 170px;
 		}
-		#Pic5:hover 
+		/*#Pic5:hover 
 		{
 			  outline: medium solid yellow;
 			  outline-offset: 10px;
+		}*/
+		.PortIm6
+		{
+			position: relative;
+			width: 275px;	
+			bottom: 413.88px;
+			left: 349px;
+			border: solid;
+			border-color: black;
+		}
+		.PortIm6:hover{
+			border-color: #99cccc;
+		}
+		#Pic6
+		{
+			width: 269px;
+			height: 170px;
 		}
 		#ContactMe
 		{
@@ -606,6 +636,34 @@
 			cursor: pointer; 
 			cursor: hand;
 			width: 269px;
+		}
+		#hobby
+		{
+			cursor: pointer; 
+			cursor: hand;
+			width: 269px;
+		}
+		.ucLI:hover{
+			background-color: #9966ff;
+			font-style: oblique;
+			color: blue;
+		}
+		.vcLI:hover{
+			background-color: #ffff00;
+			font-style: oblique;
+			color: blue;
+		}
+		.wrkLI:hover{
+			background-color: #ff6600;
+			font-style: oblique;
+			color: blue;
+		}
+		#githubb{
+			color: black;
+		}
+		a#githubb:hover{
+			color: blue;
+			text-decoration: underline;
 		}
 
 		@media screen and (max-width: 640px)

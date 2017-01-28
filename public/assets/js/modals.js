@@ -27,22 +27,22 @@ function projects(){
 	$('#myModal').css('display', 'block');
 }
 
-// function experience(){
-// 	var workExp = ["Uber / Lyft Driver (2014 – 2016)", "Sears Cashier (2015)", "Kmart Cashier (2014)", "After School Program Leader (2013)"];
+function experience(){
+	var workExp = ["Uber / Lyft Driver (2014 – 2016)", "Sears Cashier (2015)", "Kmart Cashier (2014)", "After School Program Leader (2013)"];
 
-// 	var wrkH3 = $('<h3 id="wrkH3" style="margin: 0px; font-size: 15px; margin-top: 15px; margin-left: -20px; margin-bottom:15px; width:500px; background-color: transparent; color: black;">').text("Work Experience");
-// 	$('.modal-content').append(wrkH3);
+	var wrkH3 = $('<h3 id="wrkH3" style="margin: 0px; font-size: 15px; margin-top: 15px; margin-left: -20px; margin-bottom:15px; width:500px; background-color: transparent; color: black;">').text("Work Experience");
+	$('.modal-content').append(wrkH3);
 
-// 	var expUl = $('<ul id="work" class="wrkExp" style="margin: 0px; padding: 0px; float: none; margin-right: 0px; list-style-type: circle; width: 335px;">');
+	var expUl = $('<ul id="work" class="wrkExp" style="margin: 0px; padding: 0px; float: none; margin-right: 0px; list-style-type: circle; width: 335px;">');
 
-// 	$('.modal-content').append(expUl);
-// 	for(var x = 0; x < workExp.length; x++){
-// 		var wrkLi = $('<li class="wrkLI" style="list-style-type: none; font-size: 14px; display: list-item; width: 250px; padding: 7px; margin-left:130px; text-align: left">' + workExp[x] + '</li>');
-// 		expUl.append(wrkLi);
-// 	}
+	$('.modal-content').append(expUl);
+	for(var x = 0; x < workExp.length; x++){
+		var wrkLi = $('<li class="wrkLI" style="list-style-type: none; font-size: 14px; display: list-item; width: 250px; padding: 7px; margin-left:130px; text-align: left">' + workExp[x] + '</li>');
+		expUl.append(wrkLi);
+	}
 
-// 	$('#myModal').css('display', 'block');
-// }
+	$('#myModal').css('display', 'block');
+}
 
 function education(){
 	var lavcArr = ["C++", "C#", "Object Oriented Programming", "Data Structures"];

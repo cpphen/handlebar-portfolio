@@ -28,7 +28,7 @@ function projects(){
 }
 
 function experience(){
-	var workExp = ["Uber / Lyft Driver (2014 – 2016)", "Elementary Teacher (2013-2015)", "Kmart Cashier (2014)", "Sears Cashier (2015)"];
+	var workExp = ["Uber / Lyft Driver (2014 – 2016)", "Elementary Teacher (2013-2015)", "Kmart Cashier (2014)", "Sears Cashier (2013)"];
 
 	var wrkH3 = $('<h3 id="wrkH3" style="margin: 0px; font-size: 15px; margin-top: 15px; margin-left: -20px; margin-bottom:15px; width:500px; background-color: transparent; color: black;">').text("Work Experience");
 	$('.modal-content').append(wrkH3);

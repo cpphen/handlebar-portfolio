@@ -21,8 +21,25 @@ function contact(){
 function projects(){
 	var gitDiv = $('<div id="githubbb" style="margin: 0px; margin-top: 40px;">');
 	var githubbb = $('<a id="githubb" href="https://github.com/henhen87" target="_blank" style="font-size: 45px; background-color: transparent;">').text("My GitHub Link");
-	var hangmanHer = $('<a id="githubb" href="https://tranquil-anchorage-80727.herokuapp.com/" target="_blank" style="background-color: transparent;">').text("Hangman");
 	gitDiv.append(githubbb);
+	
+	var bookfaceDiv = $('<div class="bookDiv">');
+	gitDiv.append(bookfaceDiv);
+	bookfaceDiv.append('<h1 style="font-size: 25px; padding-top: 25px; font-size:25px;">' + 'Bookface Social Media App Project' + '</h1>');
+	
+	// bookfaceDiv.append('<ul class ="bookUL">');
+	var bookUL = $('<ul class ="bookUL" style="margin-left: 200px;">');
+	bookfaceDiv.append(bookUL);
+	// $('.bookUL').append('<li><a href="https://stark-crag-86811.herokuapp.com/friend-book" target="_blank">' + 'Bookface' + '</a></li>');
+	var bookLI = $('<li>');
+	bookUL.append(bookLI);
+	var bookA = $('<a href="https://stark-crag-86811.herokuapp.com/friend-book" target="_blank" style="font-size: 20px; color: blue; font-weight:bold;">' + 'Bookface' + '</a>');
+	bookLI.append(bookA);
+	// var bookFaceUL = $('<ul class="bookface">');
+
+
+	// var bookFace = $('<a id="bookFace" href="https://stark-crag-86811.herokuapp.com/friend-book" target="_blank" style="background-color: transparent;">').text("Hangman");
+	// gitDiv.append(bookFace);
 	$('.modal-content').append(gitDiv);
 	$('#myModal').css('display', 'block');
 }
@@ -36,6 +53,7 @@ function experience(){
 	var expUl = $('<ul id="work" class="wrkExp" style="margin: 0px; padding: 0px; float: none; margin-right: 0px; list-style-type: circle; width: 335px;">');
 
 	$('.modal-content').append(expUl);
+
 	for(var x = 0; x < workExp.length; x++){
 		var wrkLi = $('<li class="wrkLI" style="list-style-type: none; font-size: 14px; display: list-item; width: 250px; padding: 7px; margin-left:130px; text-align: left">' + workExp[x] + '</li>');
 		expUl.append(wrkLi);

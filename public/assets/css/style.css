@@ -1,1391 +1,1392 @@
 
-		* 
-		{
-		  box-sizing: border-box;
-		}
-		/* The Modal (background) */
-		.modal {
-		    display: none; /* Hidden by default */
-		    position: fixed; /* Stay in place */
-		    z-index: 1; /* Sit on top */
-		    left: 0;
-		    top: 0;
-		    width: 100%; /* Full width */
-		    height: 100%; /* Full height */
-		    overflow: auto; /* Enable scroll if needed */
-		    background-color: rgb(0,0,0); /* Fallback color */
-		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		}
+* 
+{
+  box-sizing: border-box;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-		/* Modal Content/Box */
-		.modal-content {
-		    /*background-color: #fefefe;*/
-		    background-image: url(/assets/img/modal.jpg);
-		    margin: 15% auto; /* 15% from the top and centered */
-		    padding: 20px;
-		    border: 1px solid #888;
-		    width: 40%; /* Could be more or less, depending on screen size */
-		    height: 300px;
-		    text-align: center;
-		    overflow: auto;
-		}
+/* Modal Content/Box */
+.modal-content {
+    /*background-color: #fefefe;*/
+    background-image: url(/assets/img/modal.jpg);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height: 300px;
+    text-align: center;
+    overflow: auto;
+}
 
-		/* The Close Button */
-		.close {
-		    color: #aaa;
-		    float: right;
-		    font-size: 28px;
-		    font-weight: bold;
-		}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-		.close:hover,
-		.close:focus {
-		    color: black;
-		    text-decoration: none;
-		    cursor: pointer;
-		}
-		.headerWrapper
-		{
-			width: 960px;
-			margin-left: 135px;
-			overflow: auto;
-		}
-		.HeadOne
-		{
-			color: white;
-			font-size: 30px;
-			font-weight: bold;
-			background-color: #4aaaa5;
-			padding-top: 30px;
-			padding-bottom: 30px;
-			padding-right: 20px;
-			padding-left: 20px;
-			overflow: auto;
-			/*margin-left: 135px; */
-			margin-bottom: auto;
-			margin-top: auto;
-			float: left;
-		}
-		
-		.UltimateContainer
-		{
-			background-image: url(/assets/img/vichy.png); 
-			border-top: solid;
-			border-color: black;
-			border-width: thin;
-			clear: both;
-			overflow: auto;
-		}
-		.main
-		{
-			width: 960px;
-			margin-left: 135px;	
-			clear: both;
-			overflow: auto;
-		}
-		ul
-		{
-			margin-left: 530px;
-			padding-top: 35px;
-			float: left;
-			margin-top: auto;
-			list-style-type: none;
-		}
-		li
-		{
-			display: inline-block; 
-			font-size: 23px;
-		}
-		a
-		{
-			text-decoration: none;
-			color: #A9A9A9;
-			font-size: 18px;
-			padding-left: 10px;
-			padding-right: 10px;
-			font-family: "Times New Roman", Times, serif;
-		}
-		a.blue:hover
-		{
-			color: blue;
-		}
-		a.contact:link
-		{
-			color: pink;
-		}
-		a.contact:hover
-		{
-			color: orange;
-		}
-		a:link
-		{
-			color: orange;
-		}
-		a:hover
-		{
- 			color: green;
-		}
-		.contact
-		{
-			border-left: solid;
-			border-right: solid;
-			border-color: #A9A9A9;
-			border-width: thin;
-			padding-right: 10px;
-			padding-left: 10px;
-		}
-		#Profile
-		{
-			width: 190px;
-			height: 180px;
-			float: left;
-			margin-left: 20px;
-			margin-right: 20px;
-			padding-top: 15px;
-		}
-		.Profile
-		{
-			 position: relative;
-		    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
-		    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-		    animation-name: profile;
-		    animation-duration: 4s;
-		}
-		/* Chrome, Safari, Opera */
-		@-webkit-keyframes profile {
-		    0%   {left:0px; top:0px;}
-		    25%  {left:200px; top:0px;}
-		    50%  {left:200px; top:200px;}
-		    75%  {left:0px; top:200px;}
-		    100% {left:0px; top:0px;}
-		}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.headerWrapper
+{
+	width: 960px;
+	margin-left: 135px;
+	overflow: auto;
+}
+.HeadOne
+{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #4aaaa5;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+	overflow: auto;
+	/*margin-left: 135px; */
+	margin-bottom: auto;
+	margin-top: auto;
+	float: left;
+}
 
-		/* Standard syntax */
-		@keyframes profile {
-		    0%   {left:0px; top:0px;}
-		    25%  {left:200px; top:0px;}
-		    50%  {left:200px; top:200px;}
-		    75%  {left:0px; top:200px;}
-		    100% {left:0px; top:0px;}
-		}
-		#Profile:hover  {
-  			-ms-transform: rotate(-160deg);
-  			-webkit-transform: rotate(-160deg);
-  			-moz-transform: rotate(-160deg);
-  			-o-transform: rotate(-160deg);
-  			transform: rotate(-160deg);
-		 }
-		.mainDiv
-		{
-			background-color: white;
-			border: solid;
-			border-color: black;
-			border-width: thin;
-			width: 650px;
-			float: left;
-			margin-top: 50px;
-			margin-bottom: 50px;
-			padding-right: 0px;
-			padding-left: 0px;
-			overflow: auto;
-		}
-		
-		.mainDivH1
-		{
-			font-size: 30px;
-			font-weight: bold;
-			color: #4aaaa5;
-			padding-top: 35px;
-			padding-bottom: 25px;
-			padding-left: 0px;
-			margin-left: 20px;
-			margin-right: 45px;
-			border-bottom: solid;
-			border-width: medium;
-			border-color: #cccccc;
-		}
-		p
-		{
-			margin-left: auto;
-			margin-right: auto;
-			padding-top: 10px;
-			padding-right: 45px;
-			padding-left: 20px;
-			padding-bottom: 10px;
-			line-height: 150%; 
-			font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-		}
-		.p2
-		{
-			padding-top: 0px;
-		}
-		.DivConnect	
-		{
-			float: right;
-			border: solid;
-			border-color: black;
-			border-width: thin;
-			background-color: white;
-			width: 270px;
-			height: 160px;*/
-			padding-left: 0;
-			padding-bottom: 5px;
-			padding-top: 1px;
-			margin-left: 15px;
-			margin-top: 50px;
-			overflow: auto;	
-		}
-		.ConnectHeader
-		{
-			text-align: left;
-			color: #4aaaa5;
-			font-weight: bold;
-			padding-bottom: 20px;
-			padding-top: 20px;
-			margin-left: 30px;
-			font-size: 20px;
-		}
-		.ConnectList
-		{
-			border-top: solid; 
-			border-width: thin;
-			border-color: #cccccc;
-			padding-right: 5px;
-			padding-left: 1px;
-			padding-top: 20px;
-			margin-left: 19px;
-			margin-right: 5px;
-		}
-		.connectLI
-		{
-			float: left; 
-		}
+.UltimateContainer
+{
+	background-image: url(/assets/img/vichy.png); 
+	border-top: solid;
+	border-color: black;
+	border-width: thin;
+	clear: both;
+	overflow: auto;
+}
+.main
+{
+	width: 960px;
+	margin-left: 135px;	
+	clear: both;
+	overflow: auto;
+}
+ul
+{
+	margin-left: 530px;
+	padding-top: 35px;
+	float: left;
+	margin-top: auto;
+	list-style-type: none;
+}
+li
+{
+	display: inline-block; 
+	font-size: 23px;
+}
+a
+{
+	text-decoration: none;
+	color: #A9A9A9;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Times New Roman", Times, serif;
+}
+a.blue:hover
+{
+	color: blue;
+}
+a.contact:link
+{
+	color: pink;
+}
+a.contact:hover
+{
+	color: orange;
+}
+a:link
+{
+	color: orange;
+}
+a:hover
+{
+		color: green;
+}
+.contact
+{
+	border-left: solid;
+	border-right: solid;
+	border-color: #A9A9A9;
+	border-width: thin;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#Profile
+{
+	width: 190px;
+	height: 180px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 15px;
+}
+.Profile
+{
+	 position: relative;
+    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: profile;
+    animation-duration: 4s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes profile {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
 
-		#connectLI1
-		{
-			position: relative;
-			-webkit-animation-name: connect; /* Chrome, Safari, Opera */
-		    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-		    animation-name: connect;
-		    animation-duration: 4s;
-		}
-		/* Chrome, Safari, Opera */
-			@-webkit-keyframes connect {
-		    0%   {left:0px; top:0px;}
-		    25%  {left:100px; top:0px;}
-		    50%  {right:100px;}
-		    75%  {left:150px;}
-		    100% {left:0px; top:0px;}
-		}
-		/* Standard syntax */
-			@keyframes connect {
-		    0%   {left:0px;}
-		    25%  {left:100px;}
-		    50%  {right:100px;}
-		    75%  {left:150px;}
-		    100% {left:0px; top:0px;}
-		}
-		#connectLI2
-		{
-			position: relative;
-			-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
-		    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-		    animation-name: connect2;
-		    animation-duration: 4s;
-		}
-		/* Chrome, Safari, Opera */
-			@-webkit-keyframes connect2 {
-		    0%   {left:0px; top:0px;}
-		    25%  {left:50px;}
-		    100% {left:0px; top:0px;}
-		}
-		/* Standard syntax */
-			@keyframes connect2 {
-		    0%   {left:0px;}
-		    25%  {left:-50px;}
-		    100% {left:0px; top:0px;}
-		}
-		#connectLI3
-		{
-			position: relative;
-			-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
-		    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-		    animation-name: connect3;
-		    animation-duration: 4s;
-		}
-		/* Chrome, Safari, Opera */
-			@-webkit-keyframes connect3 {
-		    0%   {left:0px; top:0px;}
-		    25%  {left:200px;}
-		    100% {left:0px; top:0px;}
-		}
-		/* Standard syntax */
-			@keyframes connect3 {
-		    0%   {left:0px;}
-		    25%  {left:-170px;}
-		    100% {left:0px; top:0px;}
-		}
+/* Standard syntax */
+@keyframes profile {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+#Profile:hover  {
+		-ms-transform: rotate(-160deg);
+		-webkit-transform: rotate(-160deg);
+		-moz-transform: rotate(-160deg);
+		-o-transform: rotate(-160deg);
+		transform: rotate(-160deg);
+ }
+.mainDiv
+{
+	background-color: white;
+	border: solid;
+	border-color: black;
+	border-width: thin;
+	width: 650px;
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-right: 0px;
+	padding-left: 0px;
+	overflow: auto;
+}
 
-		#stackoverflow
-		{
-			width: 58px;
-		}
-		#stackoverflow:hover  {
-			 -ms-transform: rotate(90deg);
-			 -webkit-transform: rotate(90deg);
-			 -moz-transform: rotate(90deg);
-			 -o-transform: rotate(90deg);
-			 transform: rotate(90deg);
-			 /*background: none;*/
-		}
-		#linked
-		{
-			width: 58px;
-		}
-		#linked:hover  
-		{
-			 -ms-transform: rotate(270deg);
-			 -webkit-transform: rotate(270deg);
-			 -moz-transform: rotate(270deg);
-			 -o-transform: rotate(270deg);
-			 transform: rotate(270deg);
-			 /*background: none;*/
-		}
-		#github
-		{
-			width: 58px;
-		}
-		#github:hover  
-		{
-			 -ms-transform: rotate(-160deg);
-			 -webkit-transform: rotate(-160deg);
-			 -moz-transform: rotate(-160deg);
-			 -o-transform: rotate(-160deg);
-			 transform: rotate(-160deg);
-			 /*background: none;*/
-		}
-		footer.foot
-		{
-			height: 60px;
-			border-color: black;
-			/*border-width: medium;*/
-			border-top: solid;
-			border-top-width: 8px;
-			background-color: #666666;
-			text-align: center;
-			padding-top: 30px;
-			padding-bottom: 45px;
-		}
-		form
-		{
-			margin-left: 20px;
-			color: #A9A9A9;
-			font-family: 'Georgia', Times, Times New Roman, serif;
-			font-size: 15px;
-			margin-bottom: 1px;
-			padding-top: 20px;
-		}
-		input
-		{
-			width: 580px;
-		}
-		button
-		{
-			background-color: #4aaaa5;
-			width: 584px;
-			margin-left: 0px;
-			font-family: 'Georgia', Times, Times New Roman, serif;
-			font-weight: lighter;
-			color: white;
-			text-align: center;
-			padding: 10px;
-			margin-top: 1px;
-			margin-bottom: 30px;
-			font-size: 17px;
-			cursor: pointer; 
-			cursor: hand;
+.mainDivH1
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #4aaaa5;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	padding-left: 0px;
+	margin-left: 20px;
+	margin-right: 45px;
+	border-bottom: solid;
+	border-width: medium;
+	border-color: #cccccc;
+}
+p
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-right: 45px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	line-height: 150%; 
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.p2
+{
+	padding-top: 0px;
+}
+.DivConnect	
+{
+	float: right;
+	border: solid;
+	border-color: black;
+	border-width: thin;
+	background-color: white;
+	width: 270px;
+	height: 160px;*/
+	padding-left: 0;
+	padding-bottom: 5px;
+	padding-top: 1px;
+	margin-left: 15px;
+	margin-top: 50px;
+	overflow: auto;	
+}
+.ConnectHeader
+{
+	text-align: left;
+	color: #4aaaa5;
+	font-weight: bold;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-left: 30px;
+	font-size: 20px;
+}
+.ConnectList
+{
+	border-top: solid; 
+	border-width: thin;
+	border-color: #cccccc;
+	padding-right: 5px;
+	padding-left: 1px;
+	padding-top: 20px;
+	margin-left: 19px;
+	margin-right: 5px;
+}
+.connectLI
+{
+	float: left; 
+}
 
-		}
-		h3
-		{
-			background-color: #4aaaa5;
-			width: 80px;
-			margin-left: 20px;
-			font-family: 'Georgia', Times, Times New Roman, serif;
-			font-weight: lighter;
-			color: white;
-			text-align: center;
-			padding: 10px;
-			margin-top: 1px;
-			margin-bottom: 30px;
-		}
-		.PortfolioH1
-		{
-			font-size: 30px;
-			font-weight: bold;
-			color: #4aaaa5;
-			padding-top: 40px;
-			padding-bottom: 20px;
-			padding-left: 0px;
-			padding-right: 20px;
-			margin-right: 70px;
-			margin-left: 35px;
-			margin-right: 20px;
-			border-bottom: solid;
-			border-width: medium;
-			border-color: #cccccc;
-		}
-		.PortIm1 
-		{
-			position: relative;
-			width: 275px;
-			top: 33px;
-			left: 35px;
-			border: solid;
-			border-color: black;
-		}
-		.PortIm1:hover{
-			border-color: #ff6666;
-		}
-		#Pic1
-		{
-			width: 269px;
-			height: 170px;
-			margin-right: -50px;
-		
-		}
-	/*	#Pic1:hover 
-		{
-			-ms-transform: rotate(-225deg);
-			-webkit-transform: rotate(-225deg);
-			-moz-transform: rotate(-225deg);
-			-o-transform: rotate(-225deg);
-			transform: rotate(-225deg);
-		}*/
-		.mainDivPortfolio
-		{
-			background-color: white;
-			border: solid;
-			border-color: black;
-			border-width: thin;
-			height: 760px;
-			width: 650px;
-			float: left;
-			margin-left: 0px;
-			margin-top: 50px;
-			margin-bottom: 50px;
-			padding-right: 10px;
-			padding-left: 0px;
-			overflow: hidden;
-		}
-		h4
-		{
-			text-align: center;
-			font-family: 'Times New Roman', Georgia, serif;
-			font-weight: lighter;
-			font-size: 20px;
-			color: white;
-			width: 275px; 
-			background-color: #4aaaa5;
-			position: absolute;
-			bottom: 2px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			margin-bottom: 10px;
-		}
-		.PortIm2
-		{
-			position: relative;
-			width: 275px;
-			left: 350px;
-			top: -146px;
-			bottom: 170px;
-			border: solid;
-			border-color: black;
+#connectLI1
+{
+	position: relative;
+	-webkit-animation-name: connect; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: connect;
+    animation-duration: 4s;
+}
+/* Chrome, Safari, Opera */
+	@-webkit-keyframes connect {
+    0%   {left:0px; top:0px;}
+    25%  {left:100px; top:0px;}
+    50%  {right:100px;}
+    75%  {left:150px;}
+    100% {left:0px; top:0px;}
+}
+/* Standard syntax */
+	@keyframes connect {
+    0%   {left:0px;}
+    25%  {left:100px;}
+    50%  {right:100px;}
+    75%  {left:150px;}
+    100% {left:0px; top:0px;}
+}
+#connectLI2
+{
+	position: relative;
+	-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: connect2;
+    animation-duration: 4s;
+}
+/* Chrome, Safari, Opera */
+	@-webkit-keyframes connect2 {
+    0%   {left:0px; top:0px;}
+    25%  {left:50px;}
+    100% {left:0px; top:0px;}
+}
+/* Standard syntax */
+	@keyframes connect2 {
+    0%   {left:0px;}
+    25%  {left:-50px;}
+    100% {left:0px; top:0px;}
+}
+#connectLI3
+{
+	position: relative;
+	-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: connect3;
+    animation-duration: 4s;
+}
+/* Chrome, Safari, Opera */
+	@-webkit-keyframes connect3 {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px;}
+    100% {left:0px; top:0px;}
+}
+/* Standard syntax */
+	@keyframes connect3 {
+    0%   {left:0px;}
+    25%  {left:-170px;}
+    100% {left:0px; top:0px;}
+}
 
-		}
-		.PortIm2:hover{
-			border-color: #9966ff;
-		}
-		#Pic2
-		{
-			width: 269px;
-			height: 170px;
-		}
-	/*	#Pic2:hover  
-		{
-			-ms-transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			-o-transform: rotate(45deg);
-			transform: rotate(45deg);
-		}*/
+#stackoverflow
+{
+	width: 58px;
+}
+#stackoverflow:hover  {
+	 -ms-transform: rotate(90deg);
+	 -webkit-transform: rotate(90deg);
+	 -moz-transform: rotate(90deg);
+	 -o-transform: rotate(90deg);
+	 transform: rotate(90deg);
+	 /*background: none;*/
+}
+#linked
+{
+	width: 58px;
+}
+#linked:hover  
+{
+	 -ms-transform: rotate(270deg);
+	 -webkit-transform: rotate(270deg);
+	 -moz-transform: rotate(270deg);
+	 -o-transform: rotate(270deg);
+	 transform: rotate(270deg);
+	 /*background: none;*/
+}
+#github
+{
+	width: 58px;
+}
+#github:hover  
+{
+	 -ms-transform: rotate(-160deg);
+	 -webkit-transform: rotate(-160deg);
+	 -moz-transform: rotate(-160deg);
+	 -o-transform: rotate(-160deg);
+	 transform: rotate(-160deg);
+	 /*background: none;*/
+}
+footer.foot
+{
+	height: 60px;
+	border-color: black;
+	/*border-width: medium;*/
+	border-top: solid;
+	border-top-width: 8px;
+	background-color: #666666;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 45px;
+}
+form
+{
+	margin-left: 20px;
+	color: #A9A9A9;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 15px;
+	margin-bottom: 1px;
+	padding-top: 20px;
+}
+input
+{
+	width: 580px;
+}
+button
+{
+	background-color: #4aaaa5;
+	width: 584px;
+	margin-left: 0px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: lighter;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 1px;
+	margin-bottom: 30px;
+	font-size: 17px;
+	cursor: pointer; 
+	cursor: hand;
 
-		.PortIm3
-		{
-			position: relative;
-			width: 275px;
-			left: 350px;
-			top: -100px;
-			border: solid;
-			border-color: black;
-		}
-		.PortIm3:hover{
-			border-color: #ff6699;
-		}
-		#Pic3
-		{
-			width: 269px;
-			height: 170px;
-		}
+}
+h3
+{
+	background-color: #4aaaa5;
+	width: 80px;
+	margin-left: 20px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: lighter;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 1px;
+	margin-bottom: 30px;
+}
+.PortfolioH1
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #4aaaa5;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	padding-right: 20px;
+	margin-right: 70px;
+	margin-left: 35px;
+	margin-right: 20px;
+	border-bottom: solid;
+	border-width: medium;
+	border-color: #cccccc;
+}
+.PortIm1 
+{
+	position: relative;
+	width: 275px;
+	top: 33px;
+	left: 35px;
+	border: solid;
+	border-color: black;
+}
+.PortIm1:hover{
+	border-color: #ff6666;
+}
+#Pic1
+{
+	width: 269px;
+	height: 170px;
+	margin-right: -50px;
+
+}
+/*	#Pic1:hover 
+{
+	-ms-transform: rotate(-225deg);
+	-webkit-transform: rotate(-225deg);
+	-moz-transform: rotate(-225deg);
+	-o-transform: rotate(-225deg);
+	transform: rotate(-225deg);
+}*/
+.mainDivPortfolio
+{
+	background-color: white;
+	border: solid;
+	border-color: black;
+	border-width: thin;
+	height: 760px;
+	width: 650px;
+	float: left;
+	margin-left: 0px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-right: 10px;
+	padding-left: 0px;
+	overflow: hidden;
+}
+h4
+{
+	text-align: center;
+	font-family: 'Times New Roman', Georgia, serif;
+	font-weight: lighter;
+	font-size: 20px;
+	color: white;
+	width: 275px; 
+	background-color: #4aaaa5;
+	position: absolute;
+	bottom: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.PortIm2
+{
+	position: relative;
+	width: 275px;
+	left: 350px;
+	top: -146px;
+	bottom: 170px;
+	border: solid;
+	border-color: black;
+
+}
+.PortIm2:hover{
+	border-color: #9966ff;
+}
+#Pic2
+{
+	width: 269px;
+	height: 170px;
+}
+/*	#Pic2:hover  
+{
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}*/
+
+.PortIm3
+{
+	position: relative;
+	width: 275px;
+	left: 350px;
+	top: -100px;
+	border: solid;
+	border-color: black;
+}
+.PortIm3:hover{
+	border-color: #ff6699;
+}
+#Pic3
+{
+	width: 269px;
+	height: 170px;
+}
 /*		#Pic3:hover 
-		{
-			  outline: thick solid orange;
-			  outline-offset: 10px;
-		}*/
-		.PortIm4
-		{
-			position: relative;
-			width: 275px;
-			bottom: 279px;
-			right: -35px;
-			border: solid;
-			border-color: black;
-		}
-		.PortIm4:hover{
-			border-color: #33ff00;
-		}
-		#Pic4
-		{
-			width: 269px;
-			height: 170px;
-		}
-		/*#Pic4:hover  
-		{
-			-ms-transform: rotate(-45deg);
-			-webkit-transform: rotate(-45deg);
-			-moz-transform: rotate(-45deg);
-			-o-transform: rotate(-45deg);
-			transform: rotate(-45deg);
-		}*/
-		.PortIm5
-		{
-			position: relative;
-			width: 275px;	
-			bottom: 235px;
-			left: 35px;
-			border: solid;
-			border-color: black;
-		}
-		.PortIm5:hover{
-			border-color: #cc99cc;
-		}
-		#Pic5
-		{
-			width: 269px;
-			height: 170px;
-		}
-		/*#Pic5:hover 
-		{
-			  outline: medium solid yellow;
-			  outline-offset: 10px;
-		}*/
-		.PortIm6
-		{
-			position: relative;
-			width: 275px;	
-			bottom: 413.88px;
-			left: 349px;
-			border: solid;
-			border-color: black;
-		}
-		.PortIm6:hover{
-			border-color: #99cccc;
-		}
-		#Pic6
-		{
-			width: 269px;
-			height: 170px;
-		}
-		#ContactMe
-		{
-			cursor: pointer; 
-			cursor: hand;
-			width: 269px;
-		}
-		#education
-		{
-			cursor: pointer; 
-			cursor: hand;
-			width: 269px;
-		}
-	    #experience
-		{
-			cursor: pointer; 
-			cursor: hand;
-			width: 269px;
-		}
-		#projects
-		{
-			cursor: pointer; 
-			cursor: hand;
-			width: 269px;
-		}
-		#skills
-		{
-			cursor: pointer; 
-			cursor: hand;
-			width: 269px;
-		}
-		#hobby
-		{
-			cursor: pointer; 
-			cursor: hand;
-			width: 269px;
-		}
-		.ucLI:hover{
-			background-color: #9966ff;
-			font-style: oblique;
-			color: blue;
-		}
-		.vcLI:hover{
-			background-color: #ffff00;
-			font-style: oblique;
-			color: blue;
-		}
-		.wrkLI:hover{
-			background-color: #ff6600;
-			font-style: oblique;
-			color: blue;
-		}
-		#githubb{
-			color: black;
-		}
-		a#githubb:hover{
-			color: blue;
-			text-decoration: underline;
-		}
+{
+	  outline: thick solid orange;
+	  outline-offset: 10px;
+}*/
+.PortIm4
+{
+	position: relative;
+	width: 275px;
+	bottom: 279px;
+	right: -35px;
+	border: solid;
+	border-color: black;
+}
+.PortIm4:hover{
+	border-color: #33ff00;
+}
+#Pic4
+{
+	width: 269px;
+	height: 170px;
+}
+/*#Pic4:hover  
+{
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}*/
+.PortIm5
+{
+	position: relative;
+	width: 275px;	
+	bottom: 235px;
+	left: 35px;
+	border: solid;
+	border-color: black;
+}
+.PortIm5:hover{
+	border-color: #cc99cc;
+}
+#Pic5
+{
+	width: 269px;
+	height: 170px;
+}
+/*#Pic5:hover 
+{
+	  outline: medium solid yellow;
+	  outline-offset: 10px;
+}*/
+.PortIm6
+{
+	position: relative;
+	width: 275px;	
+	bottom: 413.88px;
+	left: 349px;
+	border: solid;
+	border-color: black;
+}
+.PortIm6:hover{
+	border-color: #99cccc;
+}
+#Pic6
+{
+	width: 269px;
+	height: 170px;
+}
+#ContactMe
+{
+	cursor: pointer; 
+	cursor: hand;
+	width: 269px;
+}
+#education
+{
+	cursor: pointer; 
+	cursor: hand;
+	width: 269px;
+}
+#experience
+{
+	cursor: pointer; 
+	cursor: hand;
+	width: 269px;
+}
+#projects
+{
+	cursor: pointer; 
+	cursor: hand;
+	width: 269px;
+}
+#skills
+{
+	cursor: pointer; 
+	cursor: hand;
+	width: 269px;
+}
+#hobby
+{
+	cursor: pointer; 
+	cursor: hand;
+	width: 269px;
+}
+.ucLI:hover{
+	background-color: #9966ff;
+	font-style: oblique;
+	color: blue;
+}
+.vcLI:hover{
+	background-color: #ffff00;
+	font-style: oblique;
+	color: blue;
+}
+.wrkLI:hover{
+	background-color: #ff6600;
+	font-style: oblique;
+	color: blue;
+}
+#githubb{
+	width: 100%;
+	color: black;
+}
+#githubb:hover{
+	color: blue;
+	text-decoration: underline;
+}
 
-		@media screen and (max-width: 640px)
-		{
-			.UltimateContainer
-			{
-				/*overflow: visible;*/
-				/*width: 100%;*/
-				padding-right: 20px;
-				padding-left: 20px;
-			}
-			.headerWrapper
-			{
-				position: static;
-				width: 100%;
-				margin-left: 0;
-			}
-			.contactList
-			{
-				width: 100%;
-				margin-left: 0;
-				padding-top: 15px;
-				padding-bottom: 15px;
-				text-align: center;
-			}
-	
-			#header
-			{
-				width: 100%;
-				text-align: center;
-				/*padding-left: 100px;*/
-			}
-			#sectionMain
-			{
-				/*position: static;*/
-				/*overflow: visible;*/
-				width: 100%;
-				margin-left: 0;
-			}
-			#sectionAbout,
-			#sectionConnect
-			{
-				width: 100%;
-			}
-			#sectionAbout
-			{
-				margin-bottom: 20px;
-				margin-top: 25px;
-			}
-			#sectionPortfolio
-			{
-				width: 100%;
-				height: 1585px;
-				overflow: auto;
-				padding-right: 65px;
-				margin-bottom: 20px;
-				margin-top: 30px;
-			}
-			#Portfolio
-			{
-				width: 100%;
-			}
-			h4
-			{
-				width: 100%;
-				overflow: auto;
-			}
-			div.PortIm1
-			{
-				/*position: static;*/
-				width: 100%
-			}
-			#Pic1
-			{
-				/*top: 200px;*/
-				width: 100%;
-				height: 250px;
-			}
-			div.PortIm2
-			{
-				/*position: static;*/
-				top: 660px;
-				left: 35px;
-				width: 100%;
-			}
-			#Pic2
-			{
-				/*top: 200px;*/
-				width: 100%;
-				height: 250px;
-			}
-			div.PortIm3
-			{
-				top: 700px;
-				left: 35px;
-				width: 100%;
-			}
-			#Pic3
-			{
-				width: 100%;
-				height: 250px;
-			}
-			div.PortIm4
-			{
-				width: 100%;
-				top: -430px;
-			}
-			#Pic4
-			{
-				width: 100%;
-				height: 250px;
-			}
-			div.PortIm5
-			{
-				width: 100%;
-				top: -390px;
-			}
-			#Pic5
-			{
-				width: 100%;
-				height: 250px;
-			}
-			#AboutMe
-			{
-				margin-right: 10px;
-			}
-			#sectionConnect
-			{
-				margin-left: 20px;
-				margin-top: 10px;
-				margin-bottom: 20px;
-			}
-			#stackoverflow,
-			#github,
-			#linked
-			{
-				width: 40px;
-			}
-			button
-			{
-				width: 98%;
-			}
-			input
-			{
-				width: 98%;
-			}
-			textarea
-			{
-				width: 98%
-			}
-			li#connectLI1
-			{
-				position: relative;
-				-webkit-animation-name: connect; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-				@-webkit-keyframes connect {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:450px; top:0px;}
-			    50%  {right:100px;}
-			    75%  {left:150px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-				@keyframes connect {
-			    0%   {left:0px;}
-			    25%  {left:450px;}
-			    50%  {right:100px;}
-			    75%  {left:150px;}
-			    100% {left:0px; top:0px;}
-			}
-			li#connectLI2
-			{
-				position: relative;
-				-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect2;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-			@-webkit-keyframes connect2 {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:50px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-			@keyframes connect2 {
-			    0%   {left:0px;}
-			    25%  {left:-50px;}
-			    100% {left:0px; top:0px;}
-			}
-			li#connectLI3
-			{
-				position: relative;
-				-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect3;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-				@-webkit-keyframes connect3 {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:200px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-				@keyframes connect3 {
-			    0%   {left:0px;}
-			    25%  {left:-170px;}
-			    100% {left:0px; top:0px;}
-			}
-			.Profile
-			{
-				 position: relative;
-			    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: profile;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-			@-webkit-keyframes profile {
-			    0%   {left:0px; top:0px;}
-			    50%  {left:300px; top:200px;}
-			    75%  {left:0px; top:300px;}
-			    100% {left:0px; top:0px;}
-			}
+@media screen and (max-width: 640px)
+{
+	.UltimateContainer
+	{
+		/*overflow: visible;*/
+		/*width: 100%;*/
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.headerWrapper
+	{
+		position: static;
+		width: 100%;
+		margin-left: 0;
+	}
+	.contactList
+	{
+		width: 100%;
+		margin-left: 0;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
 
-			/* Standard syntax */
-			@keyframes profile {
-			    0%   {left:0px; top:0px;}
-			    50%  {left:300px; top:200px;}
-			    75%  {left:0px; top:300px;}
-			    100% {left:0px; top:0px;}
-			}
-		}
-		@media screen and (min-width: 641px) and (max-width: 768px)
-		{
-			.UltimateContainer
-			{
-				/*overflow: visible;*/
-				/*width: 100%;*/
-				padding-right: 20px;
-				padding-left: 20px;
-			}
-			.headerWrapper
-			{
-				/*position: static;*/
-				width: 100%;
-				margin-left: 0;
-				padding-left: 20px;
-			}
-			.contactList
-			{
-				width: 50%;  /*Unlike the 640px max width, I had to adjust the size to less than 100% for max width 768 and 980 because i dont want it to take up whole row. If this took up 100% instead of 50% it would get pushed down to next row when the screen size gets between the media query*/
-				margin-left: 0;
-				padding-top: 40px;
-				padding-bottom: 15px;
-				text-align: right;
-				float: right;
-			}
-			#sectionMain
-			{
-				/*position: static;*/
-				/*overflow: visible;*/
-				width: 100%;
-				margin-left: 0;
-			}
-			#sectionAbout,
-			#sectionConnect
-			{
-				width: 100%;
-			}
-			#sectionAbout
-			{
-				margin-bottom: 20px;
-			}
-			#sectionPortfolio
-			{
-				width: 100%;
-				height: 690px;
-				overflow: auto;
-				padding-right: 30px;
-				padding-left: 15px;
-				padding-bottom: 5px;
-				margin-bottom: 20px;
-				margin-top: 30px;
-			}
-			h4
-			{
-				position: absolute;
-				width: 100%;
-				bottom: : 80px;
-			}
-			div.ImContainer 
-			{
-				position: relative;
-				/*overflow: auto;*/
-				left: 10px;
-			}
-			div.ImContainer2
-			{
-				position: relative;
-				left: 20px;
-			}
-			div.PortIm1
-			{
-				/*padding-top: 30px;*/
-				position: static;
-				margin-bottom: 20px;
-				padding-left: 2px;
-				width: 50%; /*Had to make this 50 percent so that I could contain two in one row next to each other.*/
-				float: right;
-			}
-			#Pic1
-			{
-				/*top: 200px;*/
-				width: 100%;
-				/*height: 250px;*/
-				/*position: relative;*/
-			}
-			div.PortIm2
-			{
-				/*padding-top: 30px;*/
-				position: static;
-				padding-right: 10px;
-				margin-bottom: 20px;
-				/*top: 660px;*/
-				/*left: 35px;*/
-				width: 50%;
-				float: right;
-			}
-			#Pic2
-			{
-				width: 100%;
-			}
-			div.PortIm3
-			{
-				position: static;
-				padding-right: 10px;
-				width: 50%;
-				float: left;
-			}
-			#Pic3
-			{
-				width: 100%;
-			}
-			div.PortIm4
-			{
-				position: static;
-				width: 50%;
-				padding-left: 2px;
-				float: left;
-			}
-			#Pic4
-			{
-				width: 100%;
-			}
-			div.PortIm5
-			{
-				position: static;
-				width: 50%;
-				margin-top: 20px;
-				padding-right: 10px;
-				float: left;
-			}
-			#Pic5
-			{
-				width: 100%;
-			}
-			#Portfolio
-			{
-				margin-bottom: 30px;
-				margin-left: 10px;
-				width: 100%;
-			}
-			#sectionConnect
-			{
-				margin-top: 10px;
-				margin-bottom: 20px;
-			}
-			button
-			{
-				width: 93.5%;
-			}
-			input
-			{
-				width: 93.5%;
-			}
-			textarea
-			{
-				width: 93.5%;
-			}
-			li#connectLI1
-			{
-				position: relative;
-				-webkit-animation-name: connect; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-				@-webkit-keyframes connect {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:700px; top:0px;}
-			    50%  {right:100px;}
-			    75%  {left:150px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-				@keyframes connect {
-			    0%   {left:0px;}
-			    25%  {left:700px;}
-			    50%  {right:100px;}
-			    75%  {left:150px;}
-			    100% {left:0px; top:0px;}
-			}
-			li#connectLI2
-			{
-				position: relative;
-				-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect2;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-			@-webkit-keyframes connect2 {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:50px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-			@keyframes connect2 {
-			    0%   {left:0px;}
-			    25%  {left:-50px;}
-			    100% {left:0px; top:0px;}
-			}
-			li#connectLI3
-			{
-				position: relative;
-				-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect3;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-				@-webkit-keyframes connect3 {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:200px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-				@keyframes connect3 {
-			    0%   {left:0px;}
-			    25%  {left:-170px;}
-			    100% {left:0px; top:0px;}
-			}
-			.Profile
-			{
-				 position: relative;
-			    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: profile;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-			@-webkit-keyframes profile {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:200px; top:0px;}
-			    50%  {left:200px; top:200px;}
-			    75%  {left:0px; top:0px;}
-			    100% {left:0px; top:0px;}
-			}
+	#header
+	{
+		width: 100%;
+		text-align: center;
+		/*padding-left: 100px;*/
+	}
+	#sectionMain
+	{
+		/*position: static;*/
+		/*overflow: visible;*/
+		width: 100%;
+		margin-left: 0;
+	}
+	#sectionAbout,
+	#sectionConnect
+	{
+		width: 100%;
+	}
+	#sectionAbout
+	{
+		margin-bottom: 20px;
+		margin-top: 25px;
+	}
+	#sectionPortfolio
+	{
+		width: 100%;
+		height: 1585px;
+		overflow: auto;
+		padding-right: 65px;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+	#Portfolio
+	{
+		width: 100%;
+	}
+	h4
+	{
+		width: 100%;
+		overflow: auto;
+	}
+	div.PortIm1
+	{
+		/*position: static;*/
+		width: 100%
+	}
+	#Pic1
+	{
+		/*top: 200px;*/
+		width: 100%;
+		height: 250px;
+	}
+	div.PortIm2
+	{
+		/*position: static;*/
+		top: 660px;
+		left: 35px;
+		width: 100%;
+	}
+	#Pic2
+	{
+		/*top: 200px;*/
+		width: 100%;
+		height: 250px;
+	}
+	div.PortIm3
+	{
+		top: 700px;
+		left: 35px;
+		width: 100%;
+	}
+	#Pic3
+	{
+		width: 100%;
+		height: 250px;
+	}
+	div.PortIm4
+	{
+		width: 100%;
+		top: -430px;
+	}
+	#Pic4
+	{
+		width: 100%;
+		height: 250px;
+	}
+	div.PortIm5
+	{
+		width: 100%;
+		top: -390px;
+	}
+	#Pic5
+	{
+		width: 100%;
+		height: 250px;
+	}
+	#AboutMe
+	{
+		margin-right: 10px;
+	}
+	#sectionConnect
+	{
+		margin-left: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#stackoverflow,
+	#github,
+	#linked
+	{
+		width: 40px;
+	}
+	button
+	{
+		width: 98%;
+	}
+	input
+	{
+		width: 98%;
+	}
+	textarea
+	{
+		width: 98%
+	}
+	li#connectLI1
+	{
+		position: relative;
+		-webkit-animation-name: connect; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes connect {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:450px; top:0px;}
+	    50%  {right:100px;}
+	    75%  {left:150px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+		@keyframes connect {
+	    0%   {left:0px;}
+	    25%  {left:450px;}
+	    50%  {right:100px;}
+	    75%  {left:150px;}
+	    100% {left:0px; top:0px;}
+	}
+	li#connectLI2
+	{
+		position: relative;
+		-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect2;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes connect2 {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:50px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+	@keyframes connect2 {
+	    0%   {left:0px;}
+	    25%  {left:-50px;}
+	    100% {left:0px; top:0px;}
+	}
+	li#connectLI3
+	{
+		position: relative;
+		-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect3;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes connect3 {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:200px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+		@keyframes connect3 {
+	    0%   {left:0px;}
+	    25%  {left:-170px;}
+	    100% {left:0px; top:0px;}
+	}
+	.Profile
+	{
+		 position: relative;
+	    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: profile;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes profile {
+	    0%   {left:0px; top:0px;}
+	    50%  {left:300px; top:200px;}
+	    75%  {left:0px; top:300px;}
+	    100% {left:0px; top:0px;}
+	}
 
-			/* Standard syntax */
-			@keyframes profile {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:200px; top:0px;}
-			    50%  {left:200px; top:200px;}
-			    75%  {left:0px; top:0px;}
-			    100% {left:0px; top:0px;}
-			}
-		} 
-		@media screen and (min-width: 769px) and (max-width: 980px)
-		{
-			.UltimateContainer
-			{
-				padding-right: 5px;
-				padding-left: 20px;
-			}
-			.headerWrapper
-			{
-				width: 80%;
-				margin-left: 100px;
-				padding-left: 20px;
-			}
-			.contactList
-			{
-				width: 50%;
-				margin-left: 0;
-				padding-top: 40px;
-				padding-bottom: 15px;
-				padding-right: 50px;
-				font-size: small;
-				text-align: right;
-				float: right;
-			}
-			#sectionMain
-			{
-				width: 80%;
-				margin-left: 100px;
-			}
-			#sectionAbout
-			{
-				width: 55%;
-				margin-bottom: 20px;
-			}
-			#Profile
-			{
-				width: 85%;
-				height: 20%;
-				padding-bottom: 20px;
-			}
-			#sectionPortfolio
-			{
-				width: 55%;
-				height: 1090px;
-				overflow: auto;
-				padding-right: 35px;
-				padding-left: 30px;
-				padding-bottom: 5px;
-				margin-bottom: 20px;
-				margin-top: 50px;
-			}
-			h4
-			{
-				position: absolute;
-				width: 100%;
-				bottom: : 80px;
-			}
-			div.ImContainer
-			{
-				position: relative;
-			}
-			div.ImContainer2
-			{
-				position: relative;
-			}
-			div.PortIm1
-			{
-				position: static;
-				margin-bottom: 20px;
-				width: 100%; 
-				float: right;
-			}
-			#Pic1
-			{
-				width: 100%;
-			}
-			div.PortIm2
-			{
-				position: static;
-				margin-bottom: 20px;
-				width: 100%;
-				float: right;
-			}
-			#Pic2
-			{
-				width: 100%;
-			}
-			div.PortIm3
-			{
-				position: static;
-				width: 100%;
-				float: left;
-			}
-			#Pic3
-			{
-				width: 100%;
-			}
-			div.PortIm4
-			{
-				position: static;
-				width: 100%;
-				margin-top: 20px;
-				float: left;
-			}
-			#Pic4
-			{
-				width: 100%;
-			}
-			div.PortIm5
-			{
-				position: static;
-				width: 100%;
-				margin-top: 20px;
-				float: left;
-			}
-			#Pic5
-			{
-				width: 100%;
-			}
-			#Portfolio
-			{
-				margin-bottom: 30px;
-				margin-left: 10px;
-				width: 100%;
-			}
-			#sectionConnect
-			{
-				width: 35%;
-				margin-top: 50px;
-				margin-right: 35px;
-				margin-bottom: 20px;
-			}
-			#stackoverflow,
-			#github,
-			#linked
-			{
-				width: 36px;
-			}
-			button
-			{
-				width: 88%;
-			}
-			input
-			{
-				width: 88%;
-			}
-			textarea
-			{
-				width: 88%;
-			}
-			li#connectLI1
-			{
-				position: relative;
-				-webkit-animation-name: connect; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-				@-webkit-keyframes connect {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:100px; top:0px;}
-			    50%  {right:100px;}
-			    75%  {left:150px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-				@keyframes connect {
-			    0%   {left:0px;}
-			    25%  {left:100px;}
-			    50%  {right:100px;}
-			    75%  {left:150px;}
-			    100% {left:0px; top:0px;}
-			}
-			li#connectLI2
-			{
-				position: relative;
-				-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect2;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-				@-webkit-keyframes connect2 {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:50px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-				@keyframes connect2 {
-			    0%   {left:0px;}
-			    25%  {left:-50px;}
-			    100% {left:0px; top:0px;}
-			}
-			li#connectLI3
-			{
-				position: relative;
-				-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: connect3;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-				@-webkit-keyframes connect3 {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:200px;}
-			    100% {left:0px; top:0px;}
-			}
-			/* Standard syntax */
-				@keyframes connect3 {
-			    0%   {left:0px;}
-			    25%  {left:-170px;}
-			    100% {left:0px; top:0px;}
-			}
-			.Profile
-			{
-				 position: relative;
-			    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
-			    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-			    animation-name: profile;
-			    animation-duration: 4s;
-			}
-			/* Chrome, Safari, Opera */
-			@-webkit-keyframes profile {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:200px; top:0px;}
-			    50%  {left:200px; top:200px;}
-			    75%  {left:0px; top:400px;}
-			    100% {left:0px; top:0px;}
-			}
+	/* Standard syntax */
+	@keyframes profile {
+	    0%   {left:0px; top:0px;}
+	    50%  {left:300px; top:200px;}
+	    75%  {left:0px; top:300px;}
+	    100% {left:0px; top:0px;}
+	}
+}
+@media screen and (min-width: 641px) and (max-width: 768px)
+{
+	.UltimateContainer
+	{
+		/*overflow: visible;*/
+		/*width: 100%;*/
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.headerWrapper
+	{
+		/*position: static;*/
+		width: 100%;
+		margin-left: 0;
+		padding-left: 20px;
+	}
+	.contactList
+	{
+		width: 50%;  /*Unlike the 640px max width, I had to adjust the size to less than 100% for max width 768 and 980 because i dont want it to take up whole row. If this took up 100% instead of 50% it would get pushed down to next row when the screen size gets between the media query*/
+		margin-left: 0;
+		padding-top: 40px;
+		padding-bottom: 15px;
+		text-align: right;
+		float: right;
+	}
+	#sectionMain
+	{
+		/*position: static;*/
+		/*overflow: visible;*/
+		width: 100%;
+		margin-left: 0;
+	}
+	#sectionAbout,
+	#sectionConnect
+	{
+		width: 100%;
+	}
+	#sectionAbout
+	{
+		margin-bottom: 20px;
+	}
+	#sectionPortfolio
+	{
+		width: 100%;
+		height: 690px;
+		overflow: auto;
+		padding-right: 30px;
+		padding-left: 15px;
+		padding-bottom: 5px;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+	h4
+	{
+		position: absolute;
+		width: 100%;
+		bottom: : 80px;
+	}
+	div.ImContainer 
+	{
+		position: relative;
+		/*overflow: auto;*/
+		left: 10px;
+	}
+	div.ImContainer2
+	{
+		position: relative;
+		left: 20px;
+	}
+	div.PortIm1
+	{
+		/*padding-top: 30px;*/
+		position: static;
+		margin-bottom: 20px;
+		padding-left: 2px;
+		width: 50%; /*Had to make this 50 percent so that I could contain two in one row next to each other.*/
+		float: right;
+	}
+	#Pic1
+	{
+		/*top: 200px;*/
+		width: 100%;
+		/*height: 250px;*/
+		/*position: relative;*/
+	}
+	div.PortIm2
+	{
+		/*padding-top: 30px;*/
+		position: static;
+		padding-right: 10px;
+		margin-bottom: 20px;
+		/*top: 660px;*/
+		/*left: 35px;*/
+		width: 50%;
+		float: right;
+	}
+	#Pic2
+	{
+		width: 100%;
+	}
+	div.PortIm3
+	{
+		position: static;
+		padding-right: 10px;
+		width: 50%;
+		float: left;
+	}
+	#Pic3
+	{
+		width: 100%;
+	}
+	div.PortIm4
+	{
+		position: static;
+		width: 50%;
+		padding-left: 2px;
+		float: left;
+	}
+	#Pic4
+	{
+		width: 100%;
+	}
+	div.PortIm5
+	{
+		position: static;
+		width: 50%;
+		margin-top: 20px;
+		padding-right: 10px;
+		float: left;
+	}
+	#Pic5
+	{
+		width: 100%;
+	}
+	#Portfolio
+	{
+		margin-bottom: 30px;
+		margin-left: 10px;
+		width: 100%;
+	}
+	#sectionConnect
+	{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	button
+	{
+		width: 93.5%;
+	}
+	input
+	{
+		width: 93.5%;
+	}
+	textarea
+	{
+		width: 93.5%;
+	}
+	li#connectLI1
+	{
+		position: relative;
+		-webkit-animation-name: connect; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes connect {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:700px; top:0px;}
+	    50%  {right:100px;}
+	    75%  {left:150px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+		@keyframes connect {
+	    0%   {left:0px;}
+	    25%  {left:700px;}
+	    50%  {right:100px;}
+	    75%  {left:150px;}
+	    100% {left:0px; top:0px;}
+	}
+	li#connectLI2
+	{
+		position: relative;
+		-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect2;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes connect2 {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:50px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+	@keyframes connect2 {
+	    0%   {left:0px;}
+	    25%  {left:-50px;}
+	    100% {left:0px; top:0px;}
+	}
+	li#connectLI3
+	{
+		position: relative;
+		-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect3;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes connect3 {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:200px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+		@keyframes connect3 {
+	    0%   {left:0px;}
+	    25%  {left:-170px;}
+	    100% {left:0px; top:0px;}
+	}
+	.Profile
+	{
+		 position: relative;
+	    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: profile;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes profile {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:200px; top:0px;}
+	    50%  {left:200px; top:200px;}
+	    75%  {left:0px; top:0px;}
+	    100% {left:0px; top:0px;}
+	}
 
-			/* Standard syntax */
-			@keyframes profile {
-			    0%   {left:0px; top:0px;}
-			    25%  {left:200px; top:0px;}
-			    50%  {left:200px; top:200px;}
-			    75%  {left:0px; top:400px;}
-			    100% {left:0px; top:0px;}
-			}
-		}
+	/* Standard syntax */
+	@keyframes profile {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:200px; top:0px;}
+	    50%  {left:200px; top:200px;}
+	    75%  {left:0px; top:0px;}
+	    100% {left:0px; top:0px;}
+	}
+} 
+@media screen and (min-width: 769px) and (max-width: 980px)
+{
+	.UltimateContainer
+	{
+		padding-right: 5px;
+		padding-left: 20px;
+	}
+	.headerWrapper
+	{
+		width: 80%;
+		margin-left: 100px;
+		padding-left: 20px;
+	}
+	.contactList
+	{
+		width: 50%;
+		margin-left: 0;
+		padding-top: 40px;
+		padding-bottom: 15px;
+		padding-right: 50px;
+		font-size: small;
+		text-align: right;
+		float: right;
+	}
+	#sectionMain
+	{
+		width: 80%;
+		margin-left: 100px;
+	}
+	#sectionAbout
+	{
+		width: 55%;
+		margin-bottom: 20px;
+	}
+	#Profile
+	{
+		width: 85%;
+		height: 20%;
+		padding-bottom: 20px;
+	}
+	#sectionPortfolio
+	{
+		width: 55%;
+		height: 1090px;
+		overflow: auto;
+		padding-right: 35px;
+		padding-left: 30px;
+		padding-bottom: 5px;
+		margin-bottom: 20px;
+		margin-top: 50px;
+	}
+	h4
+	{
+		position: absolute;
+		width: 100%;
+		bottom: : 80px;
+	}
+	div.ImContainer
+	{
+		position: relative;
+	}
+	div.ImContainer2
+	{
+		position: relative;
+	}
+	div.PortIm1
+	{
+		position: static;
+		margin-bottom: 20px;
+		width: 100%; 
+		float: right;
+	}
+	#Pic1
+	{
+		width: 100%;
+	}
+	div.PortIm2
+	{
+		position: static;
+		margin-bottom: 20px;
+		width: 100%;
+		float: right;
+	}
+	#Pic2
+	{
+		width: 100%;
+	}
+	div.PortIm3
+	{
+		position: static;
+		width: 100%;
+		float: left;
+	}
+	#Pic3
+	{
+		width: 100%;
+	}
+	div.PortIm4
+	{
+		position: static;
+		width: 100%;
+		margin-top: 20px;
+		float: left;
+	}
+	#Pic4
+	{
+		width: 100%;
+	}
+	div.PortIm5
+	{
+		position: static;
+		width: 100%;
+		margin-top: 20px;
+		float: left;
+	}
+	#Pic5
+	{
+		width: 100%;
+	}
+	#Portfolio
+	{
+		margin-bottom: 30px;
+		margin-left: 10px;
+		width: 100%;
+	}
+	#sectionConnect
+	{
+		width: 35%;
+		margin-top: 50px;
+		margin-right: 35px;
+		margin-bottom: 20px;
+	}
+	#stackoverflow,
+	#github,
+	#linked
+	{
+		width: 36px;
+	}
+	button
+	{
+		width: 88%;
+	}
+	input
+	{
+		width: 88%;
+	}
+	textarea
+	{
+		width: 88%;
+	}
+	li#connectLI1
+	{
+		position: relative;
+		-webkit-animation-name: connect; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes connect {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:100px; top:0px;}
+	    50%  {right:100px;}
+	    75%  {left:150px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+		@keyframes connect {
+	    0%   {left:0px;}
+	    25%  {left:100px;}
+	    50%  {right:100px;}
+	    75%  {left:150px;}
+	    100% {left:0px; top:0px;}
+	}
+	li#connectLI2
+	{
+		position: relative;
+		-webkit-animation-name: connect2; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect2;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes connect2 {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:50px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+		@keyframes connect2 {
+	    0%   {left:0px;}
+	    25%  {left:-50px;}
+	    100% {left:0px; top:0px;}
+	}
+	li#connectLI3
+	{
+		position: relative;
+		-webkit-animation-name: connect3; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: connect3;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes connect3 {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:200px;}
+	    100% {left:0px; top:0px;}
+	}
+	/* Standard syntax */
+		@keyframes connect3 {
+	    0%   {left:0px;}
+	    25%  {left:-170px;}
+	    100% {left:0px; top:0px;}
+	}
+	.Profile
+	{
+		 position: relative;
+	    -webkit-animation-name: profile; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    animation-name: profile;
+	    animation-duration: 4s;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes profile {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:200px; top:0px;}
+	    50%  {left:200px; top:200px;}
+	    75%  {left:0px; top:400px;}
+	    100% {left:0px; top:0px;}
+	}
+
+	/* Standard syntax */
+	@keyframes profile {
+	    0%   {left:0px; top:0px;}
+	    25%  {left:200px; top:0px;}
+	    50%  {left:200px; top:200px;}
+	    75%  {left:0px; top:400px;}
+	    100% {left:0px; top:0px;}
+	}
+}

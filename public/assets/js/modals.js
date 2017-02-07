@@ -99,7 +99,22 @@ function education(){
 
 
 window.onclick = function(event) {
-    if (event.target == modal) {
+	console.log("over here outside modal");
+	console.log("event target", event.target.id);
+    if (event.target.id == 'myModal') {
+    	console.log("over here inside modal");
+
+		$('#myName').remove();
+		$('#myContact').remove();
+		$('#work').remove();
+		$('#wrkH3').remove();
+		$('#myNum').remove();
+		$('#ucla').remove();
+		$('#githubb').remove();
+		$('#githubbb').remove();
+		$('#lavc').remove();
+		$('#ucr').remove();
+		$('#smc').remove();
         // modal.style.display = "none";
         $('#myModal').css('display', 'none');
     }
@@ -114,8 +129,25 @@ function close(){
 	$('#myNum').remove();
 	$('#ucla').remove();
 	$('#githubb').remove();
+	$('#githubbb').remove();
 	$('#lavc').remove();
 	$('#ucr').remove();
 	$('#smc').remove();
 	$('#myModal').css('display', 'none');
 }
+
+	// $('.bookDiv').remove();
+	// $('.bookUL').remove();
+	// $('#bookID').remove();
+	// $('#myName').remove();
+	// $('.bookA').remove();
+	// $('#myContact').remove();
+	// $('#work').remove();
+	// $('#wrkH3').remove();
+	// $('#myNum').remove();
+	// $('#ucla').remove();
+	// $('#githubb').remove();
+	// $('#githubbb').remove();
+	// $('#lavc').remove();
+	// $('#ucr').remove();
+	// $('#smc').remove();

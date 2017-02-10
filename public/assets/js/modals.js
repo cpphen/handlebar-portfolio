@@ -2,9 +2,42 @@ $(document).on('click', '#ContactMe', contact);
 $(document).on('click', '#education', education);
 $(document).on('click', '#experience', experience);
 $(document).on('click', '#projects', projects);
+$(document).on('click', '#skills', skills);
+$(document).on('click', '#hobby', hobbies);
 $(document).on('click', '.close', close);
 
 var modal = $('#myModal');
+
+function hobbies(){
+	var hobbyList = ['Coding', 'Music', 'Skating', 'Cooking'];
+
+	var hobbyHeader = $('<h3 id="hobbyHeader" style="font-size: 30px; margin: 0px; margin-left: 185px; width:100px; background-color: transparent; color: black;">').text("Hobbies");
+	$('.modal-content').append(hobbyHeader);
+	var hobbyUL = $('<ul id="hobbyUL" style="margin: 0; padding: 0;">');
+	$('.modal-content').append(hobbyUL);
+
+	for(var i = 0; i < hobbyList.length; i++){
+		var hobbList = $('<li id="hobbyLI" style="margin-left: 75px; list-style-type: none; font-size: 14px; display: list-item; width: 350px; padding: 7px; text-align: center">').text(hobbyList[i]);
+		hobbyUL.append(hobbList);
+	}
+	$('#myModal').css('display', 'block');
+}
+
+function skills(){
+
+	var skillList = ['Javascript', 'NodeJS', 'ReactJS', 'MySQL', 'Sequelize', 'MongoDB', 'Firebase', 'Web Scraping', 'Handlebars/Mustache', 
+	"Express", "JQuery", "HTML5", "CSS", 'C++', 'C#']
+	var skillsHeader = $('<h3 id="skillsHeader" style="font-size: 30px; margin: 0px; margin-left: 192px; width:100px; background-color: transparent; color: black;">').text("Skills");
+	$('.modal-content').append(skillsHeader);
+	var skillsUL = $('<ul id="skillsUL" style="margin: 0; padding: 0;">');
+	$('.modal-content').append(skillsUL);
+
+	for(var i = 0; i < skillList.length; i++){
+		var skillsList = $('<li id="skillsLI" style="margin-left: 65px; list-style-type: none; font-size: 14px; display: list-item; width: 350px; padding: 7px; text-align: center">').text(skillList[i]);
+		skillsUL.append(skillsList);
+	}
+	$('#myModal').css('display', 'block');
+}
 
 function contact(){
 	var myName = $('<h3 id="myName" style="margin: 0px; margin-top: 40px; margin-bottom: 25px; margin-left: 193px; width:100px; background-color: transparent; color: black;">').text("Henry Lee");
@@ -104,6 +137,10 @@ window.onclick = function(event) {
     if (event.target.id == 'myModal') {
     	console.log("over here inside modal");
 
+    	$('#hobbyHeader').remove();
+    	$('#hobbyUL').remove();
+    	$('#skillsUL').remove();
+    	$('#skillsHeader').remove();
 		$('#myName').remove();
 		$('#myContact').remove();
 		$('#work').remove();
@@ -122,6 +159,10 @@ window.onclick = function(event) {
 
 function close(){
 	// $('.modal-content').empty();
+	$('#hobbyHeader').remove();
+    $('#hobbyUL').remove();
+	$('#skillsUL').remove();
+    $('#skillsHeader').remove();
 	$('#myName').remove();
 	$('#myContact').remove();
 	$('#work').remove();

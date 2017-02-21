@@ -55,7 +55,7 @@ router.post('/email', function(req, res){
 
 	email.send(name, emSubject, senderMail, message, function(){
 		// res.redirect('/contact');	
-		res.send('done');
+		res.end();
 	});
 });
 module.exports = router;

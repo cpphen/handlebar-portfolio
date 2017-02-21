@@ -3,6 +3,17 @@
 {
   box-sizing: border-box;
 }
+.loading{
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 480px;
+    top: 100px;
+}
+.loadGif{
+	width: 400px;
+	height: 400px;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

@@ -46,16 +46,21 @@ router.get('/portfolio', function(req, res){
 });
 
 router.post('/email', function(req, res){
-	var name = req.body.fullName;
+	console.log('EMAIL REQ', req.body);
+	console.log('EMAIL REQ', req.body.name);
+	console.log('EMAIL REQ', req.body.subject);
+	console.log('EMAIL REQ', req.body.fromEmail);
+	console.log('EMAIL REQ', req.body.message);
+	var name = req.body.name;
 	var emSubject = req.body.subject;
-	var senderMail = req.body.email;
+	var senderMail = req.body.fromEmail;
 	var message = req.body.message;
 
 	// var myEmail = 'btnysci@yahoo.com';
 
 	email.send(name, emSubject, senderMail, message, function(){
 		// res.redirect('/contact');	
-		res.end();
+		res.send("done");
 	});
 });
 module.exports = router;

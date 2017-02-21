@@ -17,6 +17,11 @@ $('#but').on('click', function(event){
 	console.log('emailInfo', emailInfo);
 	$.post('/email', emailInfo).done(function(data){
 
+		$('#name').val("");
+		$('#subject').val("");
+		$('#fromEmail').val("");
+		$('#textbox').val("");
+		
 		$('.loading').fadeIn();
 		setTimeout(hide, 7777);
 		

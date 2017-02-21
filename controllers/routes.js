@@ -12,9 +12,13 @@ var homeData = {
 	ContactLi: "Contact",
 	AboutLi: "About",
 	aboutMe: "About Me",
-	paragraph: "Hello! My name is Henry and I am ecstatic to become a software engineer and a full stack web developer. I got into programming after graduating from the University of California Riverside with a bachelors in Political Science. Afterwards, I took two years of C++ and then enrolled in the UCLA Extension coding programming. This is just the very beginning of what I consider my coding career and I plan on expanding my knowledge in JavaScript, C++ and various languages all through out my life.",
-	paragraphTwo: "I consider coding a hobby of mine and I love writing it. After graduating from my University, I decided to finally look into and pursue ",
-	paragraphThree: "Some of my hobbies are skating, playing games, exploring music, cooking and coding.",
+	paragraph: "Hello! My name is Henry and I am ecstatic to become a software engineer and a full stack web developer." +
+			   " I got into programming after graduating from the University of California Riverside with a bachelors in" +
+			   " Political Science. Afterwards, I took two years of C++ at Los Angeles Valley College and then enrolled in the UCLA Extension coding" +
+			   " program. This is just the very beginning of what I consider my programming career and I plan on expanding my" +
+			   " knowledge in JavaScript, C++ and various languages all through out my life.",
+	paragraphTwo: "I consider programming to be a hobby of mine and I enjoy doing it. My goal is to become a software engineer and a full stack web developer that can contribute to a great team to build robust and technologically advanced applications.",
+	paragraphThree: "Some of my hobbies are video games, music, cooking and coding.",
 	connectHeader: "Connect with Me",
 	formName: "Name:",
 	formSubject: "Subject:",

@@ -26,7 +26,7 @@ function hobbies(){
 function skills(){
 
 	var skillList = ['Javascript', 'NodeJS', 'ReactJS', 'MySQL', 'Sequelize', 'MongoDB', 'Firebase', 'Web Scraping', 'Handlebars/Mustache', 
-	"Express", "JQuery", "HTML5", "CSS", 'C++', 'C#']
+	"Express", "JQuery", "HTML5", "Java", "CSS", 'C++', 'C#']
 	var skillsHeader = $('<h3 id="skillsHeader" style="font-size: 30px; margin: 0px; margin-left: 192px; width:100px; background-color: transparent; color: black;">').text("Skills");
 	$('.modal-content').append(skillsHeader);
 	var skillsUL = $('<ul id="skillsUL" style="margin: 0; padding: 0;">');
@@ -97,7 +97,7 @@ function experience(){
 
 function education(){
 	var lavcArr = ["C++", "C#", "Object Oriented Programming", "Data Structures"];
-	var uclaArr = ["Full Stack Web Development", "Javascript", "NodeJS", "ReactJS", "Handlebars", "Express", "JQuery", "HTML5", "CSS", "MySQL", "MongoDB", "Firebase", "Sequelize"];
+	var uclaArr = ["Full Stack Web Development", "Java", "Javascript", "NodeJS", "ReactJS", "Handlebars", "Express", "JQuery", "HTML5", "CSS", "MySQL", "MongoDB", "Firebase", "Sequelize"];
 
 	var laUl = $('<ul id="ucla" class="ucla" style="margin: 0px; border-bottom: solid; border-color: blue; border-width: medium; padding: 0px; float: none; margin-right: 200px; list-style-type: circle; width: 335px;">').text("UCLA Extension Coding Boot Camp (2016 - 2017)");
 	// div.append(laUl);

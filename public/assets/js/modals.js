@@ -11,9 +11,9 @@ var modal = $('#myModal');
 function hobbies(){
 	var hobbyList = ['Coding', 'Music', 'Skating', 'Cooking'];
 
-	var hobbyHeader = $('<h3 id="hobbyHeader" style="font-size: 30px; margin: 0px; margin-left: 185px; width:100px; background-color: transparent; color: black;">').text("Hobbies");
+	var hobbyHeader = $('<h3 id="hobbyHeader" style="font-size: 30px; margin: 0px; margin-left: 170px; width:100px; background-color: transparent; color: black;">').text("Hobbies");
 	$('.modal-content').append(hobbyHeader);
-	var hobbyUL = $('<ul id="hobbyUL" style="margin: 0; padding: 0;">');
+	var hobbyUL = $('<ul id="hobbyUL" style="margin-left: -15px; padding: 0;">');
 	$('.modal-content').append(hobbyUL);
 
 	for(var i = 0; i < hobbyList.length; i++){
@@ -27,9 +27,9 @@ function skills(){
 
 	var skillList = ['Javascript', 'NodeJS', 'ReactJS', 'MySQL', 'Sequelize', 'MongoDB', 'Firebase', 'Web Scraping', 'Handlebars/Mustache', 
 	"Express", "JQuery", "HTML5", "Java", "CSS", 'C++', 'C#']
-	var skillsHeader = $('<h3 id="skillsHeader" style="font-size: 30px; margin: 0px; margin-left: 192px; width:100px; background-color: transparent; color: black;">').text("Skills");
+	var skillsHeader = $('<h3 id="skillsHeader" style="font-size: 30px; margin: 0px; margin-left: 175px; width:100px; background-color: transparent; color: black;">').text("Skills");
 	$('.modal-content').append(skillsHeader);
-	var skillsUL = $('<ul id="skillsUL" style="margin: 0; padding: 0;">');
+	var skillsUL = $('<ul id="skillsUL" style="margin-left: -15px; padding: 0;">');
 	$('.modal-content').append(skillsUL);
 
 	for(var i = 0; i < skillList.length; i++){
@@ -40,9 +40,9 @@ function skills(){
 }
 
 function contact(){
-	var myName = $('<h3 id="myName" style="margin: 0px; margin-top: 40px; margin-bottom: 25px; margin-left: 193px; width:100px; background-color: transparent; color: black;">').text("Henry Lee");
+	var myName = $('<h3 id="myName" style="margin: 0px; margin-top: 40px; margin-bottom: 25px; margin-left: 170px; width:100px; background-color: transparent; color: black;">').text("Henry Lee");
 	var email = $('<a id="myContact" style="color: blue" href = "/contact">').text("BtnySci@yahoo.com");
-	var number = $('<h3 id="myNum" style="margin: 0px; margin-top: 25px; margin-left: 178px; width:120px; background-color: transparent; color: black">').text("818-645-5939");
+	var number = $('<h3 id="myNum" style="margin: 0px; margin-top: 25px; margin-left: 165px; width:120px; background-color: transparent; color: black">').text("818-645-5939");
 
 	$('.modal-content').append(myName);
 	$('.modal-content').append(email);
@@ -61,7 +61,7 @@ function projects(){
 	bookfaceDiv.append('<h1 style="font-size: 25px; padding-top: 25px; font-size:25px;">' + 'Bookface Social Media App Project' + '</h1>');
 	
 	// bookfaceDiv.append('<ul class ="bookUL">');
-	var bookUL = $('<ul class ="bookUL" style="margin-left: 200px;">');
+	var bookUL = $('<ul class ="bookUL" style="margin-left: 175px;">');
 	bookfaceDiv.append(bookUL);
 	// $('.bookUL').append('<li><a href="https://stark-crag-86811.herokuapp.com/friend-book" target="_blank">' + 'Bookface' + '</a></li>');
 	var bookLI = $('<li>');

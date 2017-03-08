@@ -40,9 +40,9 @@ function skills(){
 }
 
 function contact(){
-	var myName = $('<h3 id="myName" style="margin: 0px; margin-top: 40px; margin-bottom: 25px; margin-left: 170px; width:100px; background-color: transparent; color: black;">').text("Henry Lee");
+	var myName = $('<h3 id="myName" style="margin: 0px; margin-top: 40px; margin-bottom: 25px; margin-left: 195px; width:100px; background-color: transparent; color: black;">').text("Henry Lee");
 	var email = $('<a id="myContact" style="color: blue" href = "/contact">').text("BtnySci@yahoo.com");
-	var number = $('<h3 id="myNum" style="margin: 0px; margin-top: 25px; margin-left: 165px; width:120px; background-color: transparent; color: black">').text("818-645-5939");
+	var number = $('<h3 id="myNum" style="margin: 0px; margin-top: 25px; margin-left: 185px; width:120px; background-color: transparent; color: black">').text("818-645-5939");
 
 	$('.modal-content').append(myName);
 	$('.modal-content').append(email);
